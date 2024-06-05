@@ -1,0 +1,24 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: 中间目录(x64\Debug\)包含从另一个项目(未来之城.vcxproj)共享的文件。   这会导致错误的清除和重新生成行为。
+  FileName.cpp
+C:\Users\308751845\Documents\WeChat Files\wxid_tculgmea0lrb22\FileStorage\File\2024-06\FileName(4)\跑酷游戏\FileName.cpp(100,26): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+C:\Users\308751845\Documents\WeChat Files\wxid_tculgmea0lrb22\FileStorage\File\2024-06\FileName(4)\跑酷游戏\FileName.cpp(89,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\308751845\Documents\WeChat Files\wxid_tculgmea0lrb22\FileStorage\File\2024-06\FileName(4)\跑酷游戏\FileName.cpp(96,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\308751845\Documents\WeChat Files\wxid_tculgmea0lrb22\FileStorage\File\2024-06\FileName(4)\跑酷游戏\FileName.cpp(125,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\308751845\Documents\WeChat Files\wxid_tculgmea0lrb22\FileStorage\File\2024-06\FileName(4)\跑酷游戏\FileName.cpp(158,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\308751845\Documents\WeChat Files\wxid_tculgmea0lrb22\FileStorage\File\2024-06\FileName(4)\跑酷游戏\FileName.cpp(173,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\308751845\Documents\WeChat Files\wxid_tculgmea0lrb22\FileStorage\File\2024-06\FileName(4)\跑酷游戏\FileName.cpp(355,12): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+C:\Users\308751845\Documents\WeChat Files\wxid_tculgmea0lrb22\FileStorage\File\2024-06\FileName(4)\跑酷游戏\FileName.cpp(388,12): warning C4101: “msg”: 未引用的局部变量
+C:\Users\308751845\Documents\WeChat Files\wxid_tculgmea0lrb22\FileStorage\File\2024-06\FileName(4)\跑酷游戏\FileName.cpp(437,72): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+C:\Users\308751845\Documents\WeChat Files\wxid_tculgmea0lrb22\FileStorage\File\2024-06\FileName(4)\跑酷游戏\FileName.cpp(487,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\308751845\Documents\WeChat Files\wxid_tculgmea0lrb22\FileStorage\File\2024-06\FileName(4)\跑酷游戏\FileName.cpp(773,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\308751845\Documents\WeChat Files\wxid_tculgmea0lrb22\FileStorage\File\2024-06\FileName(4)\跑酷游戏\FileName.cpp(868,74): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+C:\Users\308751845\Documents\WeChat Files\wxid_tculgmea0lrb22\FileStorage\File\2024-06\FileName(4)\跑酷游戏\FileName.cpp(871,4): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  main.cpp
+  tools.cpp
+C:\Users\308751845\Documents\WeChat Files\wxid_tculgmea0lrb22\FileStorage\File\2024-06\FileName(4)\跑酷游戏\tools.cpp(25,17): warning C4244: “初始化”: 从“unsigned __int64”转换到“int”，可能丢失数据
+C:\Users\308751845\Documents\WeChat Files\wxid_tculgmea0lrb22\FileStorage\File\2024-06\FileName(4)\跑酷游戏\tools.cpp(183,97): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+C:\Users\308751845\Documents\WeChat Files\wxid_tculgmea0lrb22\FileStorage\File\2024-06\FileName(4)\跑酷游戏\tools.cpp(183,67): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+C:\Users\308751845\Documents\WeChat Files\wxid_tculgmea0lrb22\FileStorage\File\2024-06\FileName(4)\跑酷游戏\tools.cpp(183,46): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+C:\Users\308751845\Documents\WeChat Files\wxid_tculgmea0lrb22\FileStorage\File\2024-06\FileName(4)\跑酷游戏\tools.cpp(183,25): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+  正在生成代码...
+  未来之城.vcxproj -> C:\Users\308751845\Documents\WeChat Files\wxid_tculgmea0lrb22\FileStorage\File\2024-06\FileName(4)\跑酷游戏\x64\Debug\未来之城.exe
