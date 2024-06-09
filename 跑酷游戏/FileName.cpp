@@ -5,11 +5,10 @@ using namespace std;
 #define WIN_WIDTH 1012
 #define WIN_HEIGHT 396
 #define OBSTACLE_COUNT 10
-#define WIN_SCORE 100;
 int initspeed=1;
 int herospeed = 1;
 int win_score = 10;
-int alreadyUp = 0;
+int alresdyUP = 0;
 int noEND = 0;
 IMAGE imgBgs[3];
 int bgX[3];//设置背景X坐标
@@ -259,7 +258,7 @@ void FileName::checkHit() {
 			int b2y = obstacles[i].y + img.getheight() - 10;//怕小乌龟碰撞取30就几乎没有体积了
 			if (Tool::rectIntersect(a1x, a1y, a2x, a2y, b1x, b1y, b2x, b2y))
 			{
-				if (obstacles[i].type == HEART && heroBlood == 100)
+				if (obstacles[i].type == HEART &&( heroBlood == 100||heroBlood-obstacles[i].power>=100)  )
 					heroBlood = 100;
 				else
 				heroBlood -= obstacles[i].power;//扣血
@@ -496,15 +495,18 @@ void FileName::updateScore() {
 		putimagePNG(0, 0, &imgESC);
 	}
 }
-void FileName::speedUP()//改
-{
-	if (score - alreadyUp >= 20)
-	{
-		initspeed += 1;
+void FileName::speedUP() {
+	if (score - alresdyUP >= 10) {
+		initspeed++;
 		initSpeed();
-		cout << "速度提升了。" << endl;
-		alreadyUp += 20;
-	}
+		alresdyUP += 10;
+	}		if (endless == 1) {
+			if (score >= 10 && score % 10 == 0) {
+				initspeed++;
+				initSpeed();
+			}
+
+		}
 }
 void FileName::checkWin() {//胜利判定
 	if (score >= win_score) {
@@ -528,7 +530,7 @@ void FileName::checkWin() {//胜利判定
 					staus = SET;
 				}
 		mciSendString("play res/bg.mp3 repeat", 0, 0, 0);
-	}
+	} 
 }
 void FileName::clickBtn(ExMessage*msg)//按钮界面
 {
@@ -698,7 +700,7 @@ void FileName::Mode(ExMessage* msg) {
 		{
 			win_score = 99999999;
 			noEND = 1;
-			alreadyUp = 0;
+			alresdyUP = 0;
 			staus = DIFFICUILT;
 		}
 	}
@@ -808,8 +810,10 @@ void FileName::run()
 	ReadRank();
 	ExMessage msg;
 	BeginBatchDraw();
+	
 	while (1)
 	{
+
 		if (staus != START && staus != CONTINUE)
 		{
 
@@ -887,7 +891,7 @@ void FileName::run()
 		if (staus == START)
 		{
 			keyEvent();
-
+			
 			timer += Tool::getDelay();
 
 			if (timer > 30)
@@ -895,9 +899,9 @@ void FileName::run()
 				timer = 0;
 				update = true;
 			}
-
 			if (update)
 			{
+				
 			
 					update = false;
 					updateBg();
@@ -906,14 +910,12 @@ void FileName::run()
 					updateBloodBar();
 					updateScore();
 					checkWin();
-					if (noEND == 1)
-					{
+					if (noEND == 1) {
 						speedUP();
 					}
 					checkOver();//检查结束
 					checkScore();
 					fly();
-					
 				
 			}
 		}
